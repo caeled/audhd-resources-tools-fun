@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ND Tool Launcher</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --fg: #c9d1d9;
+      --accent: #58a6ff;
+      --card: #161b22;
+      --border: #30363d;
+    }
+    body {
+      margin: 0;
+      font-family: 'Courier New', Consolas, monospace;
+      background: var(--bg);
+      color: var(--fg);
+      padding: 1rem;
+    }
+    h1 { color: var(--accent); margin-top: 0; }
+    #search {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.5rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--fg);
+      font-family: inherit;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: var(--accent); }
+    .card h3 { margin: 0 0 0.5rem; color: var(--accent); }
+    .card p { margin: 0; font-size: 0.9rem; opacity: 0.8; }
+    .cat { font-size: 0.75rem; color: #8b949e; }
+    .fav { float: right; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>🐿️ ND Tool Launcher</h1>
+  <p>Click any card to open. Search filters live. Favorites saved in your browser.</p>
+  <input type="search" id="search" placeholder="Filter tools (e.g. body doubling, planner, free)...">
+  <div id="grid" class="grid"></div>
+
+  <script>
+    const tools = [
+      { name: "Goblin Tools", url: "https://goblin.tools/", desc: "Break tasks into steps, formalize, estimate", cat: "Task Breakdown" },
+      { name: "Tiimo", url: "https://www.tiimoapp.com/", desc: "Visual daily planner for ADHD/autism", cat: "Planning" },
+      { name: "Structured", url: "https://structured.app/", desc: "Timeline day planner", cat: "Planning" },
+      { name: "Roomie Cafe", url: "https://roomie.cafe/", desc: "Quiet body doubling", cat: "Body Doubling" },
+      { name: "Focusmate", url: "https://www.focusmate.com/", desc: "Video body doubling sessions", cat: "Body Doubling" },
+      { name: "Time Timer", url: "https://www.timetimer.com/", desc: "Visual countdown timers", cat: "Time Blindness" },
+      { name: "Brain.fm", url: "https://www.brain.fm/", desc: "Focus music", cat: "Focus" },
+      { name: "Forest", url: "https://www.forestapp.cc/", desc: "Stay off phone, grow trees", cat: "Focus" },
+      { name: "Neurodivergent Tech Directory", url: "https://neurodivergenttech.org/", desc: "170+ tools + quiz + Ask Bob", cat: "Directory" },
+      { name: "FeelingsHelper", url: "https://feelingshelper.com/tools", desc: "Free interactive autism/ADHD tools", cat: "Regulation" },
+      { name: "JAN (Job Accommodation Network)", url: "https://askjan.org/", desc: "Workplace accommodations guidance", cat: "Work" },
+      { name: "Mentra", url: "https://www.mentra.com/", desc: "Career app for different thinkers", cat: "Work" },
+      { name: "DOSE", url: "https://dose.com/", desc: "In-the-moment ADHD support", cat: "ADHD Support" },
+      { name: "Brain in Hand", url: "https://braininhand.co.uk/", desc: "Planning + on-demand support", cat: "Support" },
+      { name: "Speechify", url: "https://speechify.com/", desc: "Text to speech", cat: "Reading" },
+      { name: "Ayoa", url: "https://www.ayoa.com/", desc: "Mind mapping", cat: "Thinking" }
+    ];
+
+    const grid = document.getElementById('grid');
+    const search = document.getElementById('search');
+    let favs = JSON.parse(localStorage.getItem('nd-favs') || '[]');
+
+    function render(filter = '') {
+      const f = filter.toLowerCase();
+      grid.innerHTML = tools
+        .filter(t => !f || (t.name + t.desc + t.cat).toLowerCase().includes(f))
+        .map(t => {
+          const isFav = favs.includes(t.name);
+          return `<div class="card" onclick="window.open('${t.url}', '_blank')">
+            <span class="fav" onclick="event.stopPropagation(); toggleFav('${t.name}')">${isFav ? '★' : '☆'}</span>
+            <h3>${t.name}</h3>
+            <div class="cat">${t.cat}</div>
+            <p>${t.desc}</p>
+          </div>`;
+        }).join('');
+    }
+
+    function toggleFav(name) {
+      if (favs.includes(name)) favs = favs.filter(n => n !== name);
+      else favs.push(name);
+      localStorage.setItem('nd-favs', JSON.stringify(favs));
+      render(search.value);
+    }
+
+    search.addEventListener('input', e => render(e.target.value));
+    render();
+  </script>
+</body>
+</html>
