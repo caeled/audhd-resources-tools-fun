@@ -2,6 +2,10 @@
 
 Focus on free or freemium options that address common AuDHD friction: task initiation, time blindness, visual planning, sensory-friendly design, body doubling, and flexible routines.
 
+## ND Tool Launcher (this repo)
+
+Open **[nd-tool-launcher.html](./nd-tool-launcher.html)** in any browser for a single-page, terminal-styled desktop of curated tools. Features live search filtering, click-to-open links, and favorites saved in LocalStorage. Self-contained — no install required. Inspired by earlier Universal Web App Terminal / PWA portal work.
+
 ## Top Picks by Problem (as of late 2026)
 
 | Problem | Tools | Notes |
