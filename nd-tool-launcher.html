@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="Self-contained desktop-style launcher for neurodivergent-friendly tools.">
   <title>ND Tool Launcher</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
   <style>
     :root {
       --bg: #0d1117;
@@ -52,7 +56,7 @@
 </head>
 <body>
   <h1>🐿️ ND Tool Launcher</h1>
-  <p>Click any card to open. Search filters live. Favorites saved in your browser.</p>
+  <p>Click any card to open. Search filters live. Favorites saved in your browser. Installable as a PWA.</p>
   <input type="search" id="search" placeholder="Filter tools (e.g. body doubling, planner, free)...">
   <div id="grid" class="grid"></div>
 
@@ -104,6 +108,13 @@
 
     search.addEventListener('input', e => render(e.target.value));
     render();
+
+    // Register service worker for PWA / offline
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').catch(() => {
+        // Silent fail — PWA optional
+      });
+    }
   </script>
 </body>
 </html>
