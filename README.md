@@ -17,7 +17,7 @@ This repository draws from prior collaborative work (including the Official AuDH
 ## Quick Links
 
 - Job Accommodation Network (JAN): https://askjan.org/
-- Neurodivergent Tech Directory: https://neurodivergenttech.org/
+- Neurodivergent Tech Directory: https://neurodivergenttech.org/ (170–186+ tools, quiz matching, Ask Bob AI, free guides)
 - FeelingsHelper free tools: https://feelingshelper.com/tools
 - Goblin Tools: https://goblin.tools/
 - Tiimo / Structured / Roomie Cafe / Focusmate for planning and body doubling
