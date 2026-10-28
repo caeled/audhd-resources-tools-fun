@@ -1,2 +1,31 @@
-# audhd-resources-tools-fun
-Curated resources, tools, strategies, and fun (including AuDHD Squirrel) for autism, ADHD, and AuDHD. Draws from prior collaborative work and current updates.
+# AuDHD Resources, Tools & Fun
+
+A living collection of resources, practical tools, strategies, accommodations, and playful elements for Autism, ADHD, and AuDHD (autism + ADHD).
+
+This repository draws from prior collaborative work (including the Official AuDHD Squirrel symbol, Creative/Meditative Squirrel Sanctuary concepts, family memes, prompt packs, and job-search strategies) plus current updates as of late 2026.
+
+**Note**: Content is for information and personal use. Not medical advice. Individual experiences vary widely.
+
+## Sections
+
+- [Resources](./resources.md) — Guides, organizations, and reading
+- [Tools & Apps](./tools.md) — Practical software and digital supports
+- [Fun & Squirrel Stuff](./fun.md) — Memes, symbols, creative projects, and lightness
+- [Accommodations & Job Search](./accommodations-jobs.md) — Workplace supports, rights, and ND-friendly career paths
+- [Prompts & Earlier Work](./prompts.md) — AI prompt packs, sanctuary concepts, and reusable seeds from prior sessions
+
+## Quick Links
+
+- Job Accommodation Network (JAN): https://askjan.org/
+- Neurodivergent Tech Directory: https://neurodivergenttech.org/
+- FeelingsHelper free tools: https://feelingshelper.com/tools
+- Goblin Tools: https://goblin.tools/
+- Tiimo / Structured / Roomie Cafe / Focusmate for planning and body doubling
+
+## About the AuDHD Squirrel
+
+The Official AuDHD Squirrel (squirrel on a computer screen) emerged as a community symbol for shitposting, tattoos, job-search artifacts, and therapeutic creative work. Related: family squirrel memes and the Meditative / Creative Squirrel Sanctuary prompt guide (liminal techno-mage aesthetic for calming).
+
+Contributions and updates welcome. This is a personal/shared knowledge base.
+
+Last updated: October 2026
