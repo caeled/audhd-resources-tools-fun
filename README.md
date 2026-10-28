@@ -13,7 +13,7 @@ This repository draws from prior collaborative work (including the Official AuDH
 - [Fun & Squirrel Stuff](./fun.md) — Memes, symbols, creative projects, and lightness
 - [Accommodations & Job Search](./accommodations-jobs.md) — Workplace supports, rights, and ND-friendly career paths
 - [Prompts & Earlier Work](./prompts.md) — AI prompt packs, sanctuary concepts, and reusable seeds from prior sessions
-- **[ND Tool Launcher](./nd-tool-launcher.html)** — Single-file HTML desktop-style launcher for quick access to tools (search, favorites, click-to-open). Open in any browser; works offline once loaded.
+- **[ND Tool Launcher](./nd-tool-launcher.html)** — Installable PWA (manifest + service worker). Desktop-style launcher with live search, favorites, and click-to-open tools. Works offline once cached. Add to home screen / install from browser.
 
 ## Quick Links
 
@@ -22,7 +22,7 @@ This repository draws from prior collaborative work (including the Official AuDH
 - FeelingsHelper free tools: https://feelingshelper.com/tools
 - Goblin Tools: https://goblin.tools/
 - Tiimo / Structured / Roomie Cafe / Focusmate for planning and body doubling
-- **ND Tool Launcher** (this repo): open `nd-tool-launcher.html` directly in a browser
+- **ND Tool Launcher** (this repo): open `nd-tool-launcher.html` directly in a browser (installable PWA)
 
 ## About the AuDHD Squirrel
 
