@@ -28,7 +28,20 @@ Many mainstream productivity tools fail for AuDHD because they assume consistent
 
 ## Directories
 
-- https://neurodivergenttech.org/
+### Neurodivergent Tech Directory (https://neurodivergenttech.org/)
+Independent, ND-led directory of **170–186+ apps and devices** for ADHD, autism/AuDHD, dyslexia, executive function, and related needs. Built by neurodivergent people for neurodivergent people.
+
+**Key features**:
+- Personalized quiz matching (~6 questions) that surfaces tools based on how your brain works.
+- Searchable directory with filters (ADHD, autism, dyslexia, executive function, workplace, assessments, focus, time blindness, RSD, body doubling, text-to-speech, etc.).
+- **Ask Bob** AI assistant: Compare tools side-by-side, build a focus toolkit under a budget (e.g. under £20/mo), draft HR emails, get DSA / Access to Work advice, or talk through needs. (Always double-check recommendations.)
+- Starting points for individuals, students, employers, parents/carers, and Access to Work (UK-focused).
+- Free downloadable guides: Top 20 Assessment Tools, Complete Buyer Guide to Neurodivergent Technology, Top 20 Neurodivergent Tech Tools of 2026, HR Director’s Guide.
+
+**Featured / commonly listed tools**: Goblin Tools, Tiimo, Brain in Hand, DOSE (in-the-moment ADHD support / digital therapeutics), Speechify, Miro, Ayoa (mind mapping), Motion, Grammarly, Mentra (career app), Koala for Work, Talamo (dyslexia assessments), Focusmate, Brain.fm, and many others covering AAC, screening, routines, mood tracking, and reading supports.
+
+UK-oriented resources page also covers assessment routes (NHS Right to Choose), workplace rights (Access to Work, ACAS, Scope), coaching, peer communities, and burnout/wellbeing support.
+
 - Awesome-style lists on GitHub (e.g., dicktracey909/awesome-adhd-tools)
 
 Update this list as new tools appear or preferences change.
